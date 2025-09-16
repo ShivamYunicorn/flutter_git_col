@@ -162,6 +162,28 @@ class _LoginScreenState extends State<LoginScreen> {
                     : const Text('Login'),
               ),
 
+              ElevatedButton(
+                //onPressed: _isLoading ? null : _login,
+                onPressed: () {
+                  Navigator.pushNamed(context, '/signup');
+                },
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.white,
+                  foregroundColor: Colors.black,
+                  elevation: 8,
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                  padding:
+                  const EdgeInsets.symmetric(horizontal: 140, vertical: 4),
+                  textStyle: const TextStyle(
+                      fontSize: 15, fontWeight: FontWeight.bold),
+                ),
+                child: _isLoading
+                    ? const CircularProgressIndicator(color: Colors.black)
+                    : const Text('Sin-Up'),
+              ),
+
 
 
             ],

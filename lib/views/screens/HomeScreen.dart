@@ -15,6 +15,7 @@ class Homescreen extends StatelessWidget {
           child: Container(
               width: 400,
               height: 400,
+              alignment: Alignment.center,
               decoration: BoxDecoration(
                 color: Colors.amber,
                 borderRadius: BorderRadius.circular(20),
@@ -28,7 +29,7 @@ class Homescreen extends StatelessWidget {
                   )
                 ]
               ),
-              child: Text('this is Home Screen'))),
+              child:Text('this is Home Screen',style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold,color:Colors.white),))),
     );
   }
 }
