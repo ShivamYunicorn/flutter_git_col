@@ -25,7 +25,7 @@ class _LoginScreenState extends State<LoginScreen> {
         if (emailController.text == "test@test.com" &&
             passwordController.text == "11111") {
           ScaffoldMessenger.of(context).showSnackBar(
-            const SnackBar(content: Text("Login Success ✅")),
+            const SnackBar(content: Text("Login Success ✅   --- by janvi")),
           );
         } else {
           ScaffoldMessenger.of(context).showSnackBar(
